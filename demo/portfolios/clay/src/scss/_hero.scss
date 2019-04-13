@@ -1,0 +1,66 @@
+.banner {  
+    .inner-banner {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        margin-bottom: 50px;
+        
+        .banner-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #000;
+            width: 100%;
+            height: 100vh;
+            
+
+            .img-content {
+                width: 100%;
+                height: 100vh;
+                overflow: hidden;
+                opacity: .4;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                
+            }       
+        } 
+        
+        .presentation{
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            .pres-content {
+                position: absolute;
+                width: 30%;
+                height: 30%;                
+                color: #fff;
+                top: 35%;
+                right: 12%;
+
+                h2 {
+                    font-size: 3.5rem;
+                    margin-bottom: 3rem;
+                    line-height: 1.4;
+
+                    span {
+                        color: aqua;
+                    }
+                }
+
+                p {
+                    font-size: 12px;
+                    line-height: 1.7;
+                    letter-spacing: 4px;
+                }
+
+                strong {
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+            }
+            
+        }
+    }
+}

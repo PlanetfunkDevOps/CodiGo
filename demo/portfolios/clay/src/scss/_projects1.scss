@@ -1,0 +1,19 @@
+.projects {
+    margin: -10% 10%;
+}
+
+.projects__item {
+    margin: 0 1.5rem;
+    p { 
+        margin: 3rem 0;
+    }
+
+    &:nth-child(odd) {
+        margin-top: -5rem;
+    }
+
+    &.middle {
+        margin-top: 10rem;
+    }
+}
+

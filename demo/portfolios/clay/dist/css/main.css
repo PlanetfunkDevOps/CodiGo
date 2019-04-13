@@ -1,0 +1,188 @@
+/* Reset */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  cursor: pointer; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+*,
+:before,
+:after {
+  box-sizing: border-box; }
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif; }
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.flex-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+header {
+  width: 100%;
+  z-index: 10;
+  position: absolute; }
+
+.inner-header {
+  background: transparent;
+  padding: 20px 40px;
+  font-size: 1rem; }
+  .inner-header .header-logo .logo {
+    width: 10px;
+    height: 20px;
+    background: #fff;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-right: 10px; }
+  .inner-header .header-logo .header-logo__link {
+    color: #fff;
+    font-size: 1.5rem; }
+  .inner-header .header-navbar .navbar__list .navbar__item {
+    margin: 10px; }
+    .inner-header .header-navbar .navbar__list .navbar__item .navbar__link {
+      color: #fff; }
+    .inner-header .header-navbar .navbar__list .navbar__item .navbar__enquire {
+      width: 70px;
+      height: 30px;
+      background: #444;
+      color: #fff;
+      font-weight: bold;
+      padding: 5px;
+      border-radius: .5rem; }
+
+.banner .inner-banner {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 50px; }
+  .banner .inner-banner .banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 100%;
+    height: 100vh; }
+    .banner .inner-banner .banner-img .img-content {
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      opacity: .4;
+      top: 0;
+      left: 0;
+      object-fit: cover; }
+  .banner .inner-banner .presentation {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    .banner .inner-banner .presentation .pres-content {
+      position: absolute;
+      width: 30%;
+      height: 30%;
+      color: #fff;
+      top: 35%;
+      right: 12%; }
+      .banner .inner-banner .presentation .pres-content h2 {
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+        line-height: 1.4; }
+        .banner .inner-banner .presentation .pres-content h2 span {
+          color: aqua; }
+      .banner .inner-banner .presentation .pres-content p {
+        font-size: 12px;
+        line-height: 1.7;
+        letter-spacing: 4px; }
+      .banner .inner-banner .presentation .pres-content strong {
+        font-size: 1rem;
+        font-weight: 600; }
+
+.about {
+  margin: 10rem 10%; }
+  .about .about_item {
+    width: 50%; }
+  .about .about-pic .about-pic__frame .about-pic__img {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%; }
+
+.prof_skills {
+  width: 100%; }
+  .prof_skills .sk_info {
+    margin-bottom: 40px; }
+    .prof_skills .sk_info h2 {
+      font-size: 3rem;
+      font-weight: bold; }
+  .prof_skills .sk_container {
+    padding: 0 10%;
+    flex-wrap: wrap; }
+    .prof_skills .sk_container .sk_item {
+      font-weight: bold;
+      font-size: 2rem; }
+      .prof_skills .sk_container .sk_item:nth-child(1) {
+        width: 50%;
+        padding-right: 1rem; }
+      .prof_skills .sk_container .sk_item:nth-child(2) {
+        width: 50%;
+        padding-left: 1rem; }
+      .prof_skills .sk_container .sk_item:nth-child(3) {
+        width: 100%;
+        padding-top: 2rem; }
+      .prof_skills .sk_container .sk_item .sk_logos {
+        font-size: 1rem;
+        display: flex;
+        flex-wrap: wrap; }
+        .prof_skills .sk_container .sk_item .sk_logos div {
+          margin: 1rem; }
+        .prof_skills .sk_container .sk_item .sk_logos img {
+          width: 50px;
+          height: 50px;
+          object-fit: cover; }
