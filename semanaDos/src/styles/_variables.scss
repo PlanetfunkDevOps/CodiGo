@@ -1,0 +1,84 @@
+/* Global variables */
+
+/* Url */
+$url-dist: '..';
+$url-public-fonts: '../fonts';
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+$font-primary: 'Exo', sans-serif;
+$font-secondary: 'Verdana';
+$global-font: 'Arial';
+
+$font-base-size: 62%; /* 18px */
+$font-body-size: 1.3rem;  /* 13xp */
+$font-heading: $font-primary;
+$font-text: $font-secondary;
+
+
+/* Layout */
+$layout-width: 960px;
+
+/* Colors */
+$color-branding: (
+  primary: #3dc154,
+  secondary: #ffba7a
+);
+
+$color-semantic: (
+  primary: #5075ea,
+  info: #cce5ff,
+  success: #059d2b,
+  error: #ff0000,
+  warning: #fff3cd,
+  important: #ffd0a5
+);
+
+$color-neutral: (
+  white: #ffffff,
+  black: #000000,
+  grey: #7b7b7b,
+  soft-grey: #cbcbcb
+);
+
+$color-borders: (
+  primary: #cdcdcd
+);
+
+$color-text: map-get($color-neutral, black);
+
+/* Buttons */
+$button-bg-primary: '';
+$button-bg-secondary: '';
+
+/* Margins, paddings and line heights */
+$margin-item: (
+  primmary: 30px,
+  secondary: 25px,
+  global: 20px,
+  backup: 15px,
+  input: 10px
+);
+
+$padding-item: (
+  primmary: 30px,
+  secondary: 25px,
+  global: 20px,
+  backup: 15px,
+  input: 10px
+);
+
+$line-height-h1: 38px;
+$line-height-h2: 32px;
+$line-height-h3: 30px;
+$line-height-h4: 26px;
+$line-height-h5: 24px;
+$line-height-h6: 22px;
+$line-height-global: 20px;
+
+/* Media query */
+$mq-desktop : 1024px;
+$mq-tablet : 800px;
+$mq-mobile : 601px;
+$mq-mobile-sm : 400px;

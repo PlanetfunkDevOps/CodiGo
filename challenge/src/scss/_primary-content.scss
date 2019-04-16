@@ -1,0 +1,123 @@
+/* Import */
+
+/*  */
+.primary-content__title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.primary-content__text {
+  font-size: 30px;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.stat-box {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  margin: 0 5%;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-box {
+  position: relative;
+  justify-self: end;
+  margin-right: 2rem;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -25%;
+    right: -2rem;
+    /* display: block; */
+    width: 0;
+    height: 150%;
+    border-left: 0.3rem solid blue;
+  }
+
+  .first-text {
+    position: absolute;
+    font-weight: bold;
+    left: 3.5rem;
+    top: 3px;
+  }
+
+  .second-text {
+    position: absolute;
+    font-weight: bold;
+    right: 3.5rem;
+    bottom: -3px;
+  }
+
+  .left-box__main {
+    /* position: relative; */
+    font-weight: bold;
+    margin: 1rem;
+
+    .first {
+      font-size: 90px;
+    }
+
+    .second {
+      font-size: 25px;
+      color: blue;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 0;
+      /* display: block; */
+      width: 2.5rem;
+      height: 2.5rem;
+      border-top: 0.7rem solid blue;
+      border-left: 0.7rem solid blue;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      /* display: block; */
+      width: 2.5rem;
+      height: 2.5rem;
+      border-right: 0.7rem solid blue;
+      border-bottom: 0.7rem solid blue;
+    }
+  }
+}
+
+.right-box {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+
+  .right-box__logo {
+    justify-self: center;
+    font-size: 6rem;
+    color: #444;
+  }
+
+  .right-box__content {
+    justify-self: center;
+    padding-left: 1rem;
+
+    h2 {
+      color: blue;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,210 @@
+/**
+ * @description: main css
+ */
+
+/* global
+---------------------------------------------------------------*/
+body {
+  font-size: 13px;
+  font-family: arial;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  margin: 0 0 20px;
+  line-height: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: helvetica;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+time {
+  background: #cdcdcd;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px 0;
+  display: inline-block;
+}
+
+/* layout
+---------------------------------------------------------------*/
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+}
+
+/* header
+---------------------------------------------------------------*/
+.header {
+  background: rgba(68, 68, 68, 0.9);
+  height: 50px;
+}
+
+.header .container {
+  clear: both;
+  overflow: hidden;
+}
+
+.header a {
+  color: #fff;
+}
+
+.header .header-logo {
+  float: left;
+}
+
+.header .nav {
+  float: right;
+}
+
+.header .nav,
+.header .header-logo {
+  margin: 19px 0 0;
+}
+
+.header .nav li {
+  display: inline-block;
+  margin: 0 0 0 30px;
+}
+
+.header .nav a:hover {
+  text-decoration: underline;
+}
+
+/* main
+---------------------------------------------------------------*/
+.main .container {
+  display: flex;
+  border-left: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+}
+
+.main aside {
+  width: 20%;
+}
+
+.main aside a {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.main aside a:hover {
+  background: #f00;
+  color: #fff;
+}
+
+.main section {
+  width: 80%;
+  padding: 20px;
+  border-left: 1px solid #ebebeb;
+}
+
+/* card
+---------------------------------------------------------------*/
+.card {
+  display: flex;
+  margin: 0 0 20px;
+  border-bottom: #f00 solid 0.25rem;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.card:nth-child(odd) {
+  background-color: #cbcbcb;
+}
+
+.card:nth-child(even) {
+  background-color: #fff;
+}
+
+.card:hover {
+  border: 0.04rem #000 solid;
+  transition: ease-in 0.5s;
+}
+
+.card:hover h2 {
+  font-size: 1.5rem;
+  transition: ease-in 0.7s;
+}
+
+.card figure {
+  width: 50%;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card div {
+  padding: 15px;
+}
+
+.card figcaption {
+  background: #e0e0e0;
+  padding: 10px;
+}
+
+.card p {
+  margin: 0 0 8px;
+}
+
+/* footer
+---------------------------------------------------------------*/
+.footer {
+  background: #f00;
+  padding: 20px;
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer p {
+  margin: 0;
+}

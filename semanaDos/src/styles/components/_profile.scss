@@ -1,0 +1,76 @@
+/* Imports */
+@import '../variables';
+
+/*  */
+.profile {
+  position: relative;
+  color: #5d5d5d;
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+
+  .profile-logo {
+    width: 128px;
+    height: 128px;
+    margin: 15px 0;
+
+    img {
+      border-radius: 10rem;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border: 3px solid transparent;
+    }
+  }
+
+  h3 {
+    font-size: 14px;
+    line-height: 10px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+  }
+
+  p {
+    margin-bottom: 10px;
+    font-size: 11px;
+  }
+}
+
+.contact-phone__list {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #5d5d5d;
+
+  p {
+    margin: 0;
+  }
+
+  .contact-phone__item {
+    margin: 0 3px;
+
+    * {
+      color: #5d5d5d;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
+
+.contact-social__list {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+
+  .contact-social__item {
+    margin: 0 2px;
+
+    .contact-social__link {
+      color: #5d5d5d;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}

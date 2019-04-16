@@ -1,0 +1,96 @@
+/* Imports */
+
+/*  */
+
+.main-header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    center bottom/cover;
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+.tecsup {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+}
+
+.header-outer {
+  position: absolute;
+  font-weight: bold;
+  left: 3rem;
+  bottom: 2rem;
+  margin: 1rem;
+  width: 500px;
+  color: #fff;
+  text-align: center;
+
+  .header-outer__main {
+    font-size: 70px;
+    font-weight: bold;
+  }
+  .header-outer__secondary {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .header-outer__general {
+    font-size: 40px;
+    font-weight: 100;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -1rem;
+    left: -0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-top: 0.7rem solid #fff;
+    border-left: 0.7rem solid #fff;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    right: -0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-right: 0.7rem solid #fff;
+    border-bottom: 0.7rem solid #fff;
+  }
+}
+
+.header__logo {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  color: #fff;
+  text-align: center;
+
+  .logo-img {
+    position: absolute;
+    font-size: 160px;
+    bottom: 3.5rem;
+    left: 0;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      right: -1.5rem;
+      width: 120%;
+      height: 0;
+      border-bottom: 0.7rem solid #fff;
+    }
+  }
+
+  .logo-text {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}

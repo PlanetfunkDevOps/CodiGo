@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="./dist/styles/register.css">
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyA71qumFgNvwmGlfrrM3aDSSASWwTQrCIw",
+      authDomain: "planetrecuiter.firebaseapp.com",
+      databaseURL: "https://planetrecuiter.firebaseio.com",
+      projectId: "planetrecuiter",
+      storageBucket: "planetrecuiter.appspot.com",
+      messagingSenderId: "135727046445"
+    };
+    firebase.initializeApp(config);
+
+    function registerUser(email, password) {
+      firebase.auth().createUserWithEmailAndPassword(email, password)
+        .catch(function (error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          // ...
+        });
+    }
+
+    function getValues() {
+      let name, lastname, cellphone, address, genderMale, genderFemale, usr, pwd, mail, career, about, facebook, twitter, github, linkedin, codepen;
+
+      name = returnValue('.js_name');
+      name = returnValue('.js_lastname');
+      name = returnValue('.js_cellphone');
+      name = returnValue('.js_address');
+      name = returnValue('.js_radio-a');
+      name = returnValue('.js_radio-b');
+      name = returnValue('.js_user');
+      name = returnValue('.js_password');
+      name = returnValue('.js_mail');
+      name = returnValue('.js_career');
+      name = returnValue('.js_about');
+      name = returnValue('.js_facebook');
+      name = returnValue('.js_twitter');
+      name = returnValue('.js_github');
+      name = returnValue('.js_linkedin');
+      name = returnValue('.js_codepen');
+    }
+
+    function registerUser() {
+
+    }
+
+    function registerInfoPersonal() {
+
+    }
+  </script>
+  <title>CodeRecruiter</title>
+</head>
+
+<body>
+
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="main-header">
+      <div class="inner-header">
+        <!--  -->
+        <a class="logo" href="#">
+          <img src="./src/content/logo.png" alt="">
+        </a>
+        <div class="social-nav">
+          <ul class="social-nav__list">
+            <li class="social-nav__item">
+              <span class="social-desc">Siguenos en: </span>
+            </li>
+            <li class="social-nav__item">
+              <a class="social-nav__link" href="#">
+                <img class="facebook" src="./src/content/facebook20x20.png" alt="">
+              </a>
+            </li>
+            <li class="social-nav__item">
+              <a class="social-nav__link" href="#">
+                <img class="instagram" src="./src/content/isntagram20x20.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="outer--header">
+        <!--  -->
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="register-form">
+        <form action="">
+          <div class="register-title">
+            <h1>Registrate</h1>
+          </div>
+          <div class="register-content">
+            <div class="register-header">
+              <h2>Datos personales</h2>
+              <p>Por favor completa tus datos</p>
+            </div>
+            <div class="register-body">
+              <div class="register-body__item">
+                <label for="">Nombre</label>
+                <input class="js_name" type="text">
+              </div>
+              <div class="register-body__item">
+                <label for="">Apellidos</label>
+                <input class="js_lastname" type="text">
+              </div>
+              <div class="register-body__item">
+                <label for="">Telefono - Celular</label>
+                <input class="js_cellphone" type="text">
+              </div>
+              <div class="register-body__item">
+                <label for="">Direccion</label>
+                <input class="js_adress" type="text">
+              </div>
+              <div class="register-body__item item-col-md">
+                <label for="">Sexo</label>
+                <div>
+                  <label for="">F</label>
+                  <input type="radio" class="js_radio-a">
+                  <label for="">M</label>
+                  <input type="radio" class="js_radio-b">
+                </div>
+              </div>
+              <div class="register-body__item">
+                <label for="">Usuario</label>
+                <input class="js_user" type="text">
+              </div>
+              <div class="register-body__item">
+                <label for="">Contraseña</label>
+                <input class="js_password" type="text">
+              </div>
+            </div>
+          </div>
+          <div class="register-content">
+            <div class="register-header">
+              <h2>Datos de la carrera</h2>
+              <p>Por favor completa tus datos</p>
+            </div>
+            <div class="register-body">
+              <div class="register-body__item item-col-md">
+                <label for="">Especialidad</label>
+                <select class="js_career">
+                  <option value="0">Elije una opcion</option>
+                  <option value="1">Ingenieria</option>
+                  <option value="2">Leyes</option>
+                  <option value="3">Medicina</option>
+                  <option value="4">Tecnica</option>
+                </select>
+              </div>
+              <div class="register-body__item item-col-md">
+                <label for="">Cuentanos sobre ti</label>
+                <textarea class="js_about"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="register-content">
+            <div class="register-header">
+              <h2>Redes Sociales</h2>
+              <p>Por favor completa tus datos</p>
+            </div>
+            <div class="register-body">
+              <div class="register-body__item item-col-md">
+                <label for="">Facebook</label>
+                <input class="js_social-facebook" type="text">
+              </div>
+              <div class="register-body__item item-col-md">
+                <label for="">Twitter</label>
+                <input class="js_social-twitter" type="text">
+              </div>
+              <div class="register-body__item item-col-md">
+                <label for="">Github</label>
+                <input class="js_social-github" type="text">
+              </div>
+              <div class="register-body__item item-col-md">
+                <label for="">Linkedin</label>
+                <input class="js_social-linkedin" type="text">
+              </div>
+              <div class="register-body__item item-col-md">
+                <label for="">Codepen</label>
+                <input class="js_social-codepen" type="text">
+              </div>
+            </div>
+          </div>
+          <button class="register-btn btn btn-sm primary js_btn-register">Registrar</button>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <!--  -->
+      <div class="inner-footer">
+        <span class="footer-desc">Todos los derechos reservados | PlanetfunkDevOps@2019</span>
+        <a href="#">
+          <img class="footer-logo" src="./src/content/logo.png" alt="">
+        </a>
+      </div>
+    </footer>
+    </main>
+  </div>
+
+  <script src="./src/scripts/main.js"></script>
+</body>
+
+</html>

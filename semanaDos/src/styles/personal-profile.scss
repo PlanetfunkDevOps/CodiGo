@@ -1,0 +1,148 @@
+@import './main.scss';
+
+.personal-profile {
+  display: grid;
+}
+
+.profile-nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    padding: 1.8rem;
+  }
+
+  &__item {
+    margin: 0 5px;
+  }
+}
+
+.profile-content {
+  .profile {
+    flex-direction: row;
+    justify-content: start;
+
+    .profile-logo {
+      width: 150px;
+      height: 150px;
+      margin-left: 1.8rem;
+    }
+
+    h3 {
+      font-size: 32px;
+      padding-bottom: 25px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+.profile-info {
+  margin-top: 15px;
+  margin-left: 1.8rem;
+  align-items: center;
+
+  .contact-phone {
+    margin-bottom: 1rem;
+    &__list {
+    border-bottom: none;
+    }
+  }
+
+  .contact-social {
+    &__link {
+      font-size: 15px;
+    }
+  }
+}
+
+.profile-desc {
+  height: auto;
+  margin: 1.8rem;
+  padding: 1rem;
+
+  .resume {
+    margin-bottom: 20px;
+    color: #7f7f7f;
+  }
+
+  .skills {
+    margin-bottom: 2rem;
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      margin: 0.5rem;
+      margin-left: 0;
+      display: block;
+      text-align: center;
+    }
+
+    &__link {
+      font-weight: bold;
+      padding: 10px;
+    }
+  }
+
+  .project {
+    margin-top: 2rem;
+
+    h2 {
+      color: #5d5d5d;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    &-item{
+      .project-details{
+        display: flex;
+        margin-bottom: 10px;
+        color: #7f7f7f;
+
+        .project-logo{
+          img {
+            border-radius: 8px;
+          }
+        }
+        .project-desc{
+          margin-left: 1rem;
+
+          h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+          }
+        }
+
+      }
+
+      .project-skills{
+        margin-bottom: 20px;
+
+        p {
+          margin-bottom: 5px;
+        }
+
+        &__list {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        &__item {
+          padding-right: 10px;
+        }
+
+        &__link {
+          font-size: 11px;
+          font-weight: bold;
+          height: 20px;
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+}
+

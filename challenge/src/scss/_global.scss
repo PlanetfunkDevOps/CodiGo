@@ -1,0 +1,83 @@
+/* Imports */
+
+/*  */
+
+body {
+  display: block;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-content {
+  margin: 1.5rem 15%;
+}
+
+.container {
+  margin-bottom: 3rem;
+}
+
+.container__title {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  border: 1px solid blue;
+  width: 60%;
+  border-radius: 1rem;
+}
+
+.container__logo {
+  padding: 0.5rem 1rem;
+}
+
+.container-body {
+  margin-left: 5%;
+  margin-right: 10%;
+  padding: 1rem 0;
+}
+
+.advert {
+  background-color: #444;
+  color: #fff;
+  margin: 0 -22.5% 3rem;
+  height: 100px;
+}
+
+.advert__content {
+  display: grid;
+  grid-template-columns: 3fr 6fr 3fr;
+  font-size: 20px;
+  height: 100%;
+  align-items: center;
+}
+
+.advert__item:nth-child(1) {
+  justify-self: end;
+  font-size: 3.5rem;
+}
+
+.advert__item:nth-child(2) {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 0.25rem;
+}
+
+.advert__item:nth-child(3) {
+  justify-self: start;
+  transform: rotate(180deg);
+  font-size: 3.5rem;
+}
+
+.primary-content {
+  margin-bottom: 3rem;
+}

@@ -1,0 +1,415 @@
+/* Imports */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  cursor: pointer; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+/* Imports */
+/*  */
+/* Imports */
+/*  */
+body {
+  display: block;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden; }
+
+.main-content {
+  margin: 1.5rem 15%; }
+
+.container {
+  margin-bottom: 3rem; }
+
+.container__title {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  border: 1px solid blue;
+  width: 60%;
+  border-radius: 1rem; }
+
+.container__logo {
+  padding: 0.5rem 1rem; }
+
+.container-body {
+  margin-left: 5%;
+  margin-right: 10%;
+  padding: 1rem 0; }
+
+.advert {
+  background-color: #444;
+  color: #fff;
+  margin: 0 -22.5% 3rem;
+  height: 100px; }
+
+.advert__content {
+  display: grid;
+  grid-template-columns: 3fr 6fr 3fr;
+  font-size: 20px;
+  height: 100%;
+  align-items: center; }
+
+.advert__item:nth-child(1) {
+  justify-self: end;
+  font-size: 3.5rem; }
+
+.advert__item:nth-child(2) {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 0.25rem; }
+
+.advert__item:nth-child(3) {
+  justify-self: start;
+  transform: rotate(180deg);
+  font-size: 3.5rem; }
+
+.primary-content {
+  margin-bottom: 3rem; }
+
+/* Imports */
+/*  */
+.main-header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center bottom/cover;
+  margin-bottom: 3rem;
+  overflow: hidden; }
+
+.tecsup {
+  position: absolute;
+  top: 0;
+  right: 2rem; }
+
+.header-outer {
+  position: absolute;
+  font-weight: bold;
+  left: 3rem;
+  bottom: 2rem;
+  margin: 1rem;
+  width: 500px;
+  color: #fff;
+  text-align: center; }
+  .header-outer .header-outer__main {
+    font-size: 70px;
+    font-weight: bold; }
+  .header-outer .header-outer__secondary {
+    font-size: 40px;
+    font-weight: bold; }
+  .header-outer .header-outer__general {
+    font-size: 40px;
+    font-weight: 100; }
+  .header-outer:before {
+    content: "";
+    position: absolute;
+    top: -1rem;
+    left: -0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-top: 0.7rem solid #fff;
+    border-left: 0.7rem solid #fff; }
+  .header-outer:after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    right: -0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-right: 0.7rem solid #fff;
+    border-bottom: 0.7rem solid #fff; }
+
+.header__logo {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  color: #fff;
+  text-align: center; }
+  .header__logo .logo-img {
+    position: absolute;
+    font-size: 160px;
+    bottom: 3.5rem;
+    left: 0; }
+    .header__logo .logo-img:after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      right: -1.5rem;
+      width: 120%;
+      height: 0;
+      border-bottom: 0.7rem solid #fff; }
+  .header__logo .logo-text {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+/* Import */
+/*  */
+.primary-content__title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 1rem; }
+
+.primary-content__text {
+  font-size: 30px;
+  color: #444;
+  margin-bottom: 2rem; }
+
+.stat-box {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  margin: 0 5%;
+  height: 300px;
+  justify-content: center;
+  align-items: center; }
+
+.left-box {
+  position: relative;
+  justify-self: end;
+  margin-right: 2rem; }
+  .left-box:before {
+    content: "";
+    position: absolute;
+    top: -25%;
+    right: -2rem;
+    /* display: block; */
+    width: 0;
+    height: 150%;
+    border-left: 0.3rem solid blue; }
+  .left-box .first-text {
+    position: absolute;
+    font-weight: bold;
+    left: 3.5rem;
+    top: 3px; }
+  .left-box .second-text {
+    position: absolute;
+    font-weight: bold;
+    right: 3.5rem;
+    bottom: -3px; }
+  .left-box .left-box__main {
+    /* position: relative; */
+    font-weight: bold;
+    margin: 1rem; }
+    .left-box .left-box__main .first {
+      font-size: 90px; }
+    .left-box .left-box__main .second {
+      font-size: 25px;
+      color: blue; }
+    .left-box .left-box__main:before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 0;
+      /* display: block; */
+      width: 2.5rem;
+      height: 2.5rem;
+      border-top: 0.7rem solid blue;
+      border-left: 0.7rem solid blue; }
+    .left-box .left-box__main:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      /* display: block; */
+      width: 2.5rem;
+      height: 2.5rem;
+      border-right: 0.7rem solid blue;
+      border-bottom: 0.7rem solid blue; }
+
+.right-box {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem; }
+  .right-box .right-box__logo {
+    justify-self: center;
+    font-size: 6rem;
+    color: #444; }
+  .right-box .right-box__content {
+    justify-self: center;
+    padding-left: 1rem; }
+    .right-box .right-box__content h2 {
+      color: blue;
+      font-size: 22px;
+      font-weight: bold; }
+    .right-box .right-box__content p {
+      font-size: 20px; }
+
+/* Imports */
+/*  */
+.info-schedule {
+  margin-left: 5%;
+  margin-bottom: 1rem; }
+
+.info-box {
+  padding: 10px 0;
+  border-bottom: 1px solid #444; }
+
+.info__title {
+  grid-column: 1/4;
+  font-size: 20px;
+  font-weight: bold; }
+
+.info__list {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-items: start; }
+
+.info__item {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0.5rem;
+  align-items: center;
+  justify-items: center; }
+  .info__item.info__action {
+    justify-items: center; }
+
+.content-title {
+  font-weight: bold; }
+
+.info__link {
+  width: 100%;
+  background: greenyellow;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center; }
+
+/* Imports */
+/*  */
+.social-contact {
+  display: grid;
+  justify-content: center;
+  align-items: center; }
+
+.social-inner {
+  text-align: center; }
+
+.social__title {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 0.3rem; }
+
+.main-link {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px; }
+
+.social__list {
+  display: flex;
+  justify-content: center; }
+
+.social__item {
+  margin: 0.1rem; }
+
+.social__link {
+  color: blue; }
+
+/* Imports */
+/*  */
+.page-footer {
+  background: blue;
+  color: #fff;
+  padding: 2rem; }
+
+.contact-info {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 4fr 3fr 4fr;
+  justify-items: center;
+  align-items: center; }
+
+.campus.trujillo {
+  justify-self: end; }
+
+.campus.piura {
+  position: relative; }
+  .campus.piura:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -2.5rem;
+    display: block;
+    width: 1rem;
+    height: 100%;
+    border-left: 0.2rem solid #fff;
+    opacity: 1;
+    transition: all 0.3s ease-out; }
+  .campus.piura:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 100%;
+    border-left: 0.2rem solid #fff;
+    opacity: 1;
+    transition: all 0.3s ease-out; }
+
+.campus.cajamarca {
+  justify-self: start; }
+
+.campus__title {
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.campus__mail {
+  font-weight: bold; }
+
+.telf {
+  position: relative; }
+
+.dot {
+  position: absolute;
+  font-size: 3px;
+  top: 40%; }
+
+/*  */

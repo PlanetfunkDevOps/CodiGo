@@ -1,0 +1,53 @@
+/* Imports */
+
+/*  */
+.info-schedule {
+  margin-left: 5%;
+  margin-bottom: 1rem;
+}
+
+.info-box {
+  padding: 10px 0;
+  border-bottom: 1px solid #444;
+}
+
+.info__title {
+  grid-column: 1/4;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.info__list {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-items: start;
+}
+
+.info__item {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0.5rem;
+  align-items: center;
+  justify-items: center;
+
+  &.info__action {
+    justify-items: center;
+  }
+}
+
+.info__content {
+}
+
+.content-title {
+  font-weight: bold;
+}
+
+.info__link {
+  width: 100%;
+  background: greenyellow;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+}

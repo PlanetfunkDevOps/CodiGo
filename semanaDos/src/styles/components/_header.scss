@@ -1,0 +1,17 @@
+@import "../variables";
+@import "list.scss";
+
+.main-header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.inner-header {
+  padding: map-get($padding-item, global);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+

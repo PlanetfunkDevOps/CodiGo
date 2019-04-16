@@ -1,0 +1,32 @@
+@import '../variables';
+
+.btn {
+  background-color: #fff;
+  border-radius: 4px;
+  display: inline-block;
+
+  &.primary {
+    background-color: #3dc154;
+    color: #fff;
+  }
+
+  &.secondary {
+    background-color: #ffba7a;
+  }
+
+  &.btn-sm {
+    color: #fff;
+    height: 35px;
+    font-size: 13px;
+    padding: 5px;
+  }
+
+  &.btn-large {
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    height: 42px;
+    font-size: 18px;
+    padding: 10px;
+  }
+}

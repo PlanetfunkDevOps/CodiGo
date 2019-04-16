@@ -1,0 +1,115 @@
+.secondary-nav {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #62346f;
+}
+
+.secondary-nav a {
+  color: #fff;
+}
+
+#section-links {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px;
+  overflow: hidden;
+  transition: all 1s ease-out;
+}
+
+#section-links a {
+  position: relative;
+  padding: 0 1.2rem;
+}
+
+.scroll-left:before,
+.scroll-right:before {
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  padding-top: 0.9rem;
+  top: 0;
+  font-weight: bold;
+}
+
+.scroll-left:before {
+  content: "\f100";
+  left: 0;
+}
+
+.scroll-right:before {
+  content: "\f101";
+  right: 0;
+}
+
+.bottom-section {
+  margin-top: unset;
+  color: #000;
+}
+
+.left-section h1 {
+  padding-top: 10px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.politica-article {
+  position: relative;
+  margin: 20px 0;
+}
+
+.article-title {
+  padding: 6px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.article-content {
+  display: flex;
+}
+
+.article-content figure {
+  margin-right: 20px;
+}
+
+.article-text {
+  position: relative;
+  text-align: justify;
+  font-size: 13px;
+}
+
+.article-detail {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-bottom: 10px;
+}
+
+.section-article {
+  position: relative;
+  color: #fff;
+  background: #62346f;
+}
+
+.detail__list a {
+  color: #000;
+  border-color: #000;
+  text-align: center;
+}
+
+.featured-article__tag {
+  margin: unset;
+}
+
+/* .detail__item a {
+  padding: 7px;
+} */
+

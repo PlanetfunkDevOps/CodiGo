@@ -1,0 +1,115 @@
+.header {
+  background-color: #444;
+  height: 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-items {
+  list-style: none;
+}
+
+.search-btn {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar ul {
+  width: 20%;
+  list-style: none;
+  color: #444;
+}
+
+.sidebar a {
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  transition: all 1s;
+}
+
+.sidebar a:visited {
+  color: #444;
+}
+
+.sidebar .m-list a:after,
+.sidebar .s-list a:after {
+  content: "";
+  display: block;
+  height: 0.2rem;
+  background-color: #ff6700;
+  width: 100%;
+  transform: translateY(5px) left;
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+
+.sidebar .m-list a:hover:after,
+.sidebar .m-list a:focus:after,
+.sidebar .s-list a:hover:after,
+.sidebar .s-list a:hover:after {
+  transform: translateY(3px);
+  opacity: 1;
+}
+
+.content {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 5%;
+}
+
+.card {
+  width: 150px;
+  border: 1px solid #000;
+  flex-wrap: wrap;
+  margin: 1rem;
+  padding: 1rem;
+  background: url("../images/dog.jpg");
+  background-size: cover;
+  border: 0.3rem #444 solid;
+  border-radius: 0.5rem;
+  z-index: 0;
+}
+
+.card * {
+  opacity: 0;
+  z-index: 1;
+}
+
+.card a,
+.card p,
+.card h2 {
+  color: #fff;
+}
+
+.card:hover {
+  border: 0.3rem #ff6700 solid;
+  text-align: center;
+  transition: all 1s;
+}
+
+.card:hover .wrapper {
+  background-color: #444;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.card:hover * {
+  opacity: 1;
+}
