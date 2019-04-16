@@ -1,10 +1,10 @@
-.banner {  
+.banner {
     .inner-banner {
         position: relative;
         width: 100vw;
         height: 100vh;
         margin-bottom: 50px;
-        
+
         .banner-img {
             position: absolute;
             top: 0;
@@ -12,7 +12,7 @@
             background: #000;
             width: 100%;
             height: 100vh;
-            
+
 
             .img-content {
                 width: 100%;
@@ -22,10 +22,38 @@
                 top: 0;
                 left: 0;
                 object-fit: cover;
-                
-            }       
-        } 
-        
+            }
+        }
+
+        .banner-scroll {
+          width: 100%;
+          position: absolute;
+          bottom: 20px;
+          color: #fff;
+
+          .scroll-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+              margin-bottom: 20px;
+            }
+
+            a {
+              font-size: 1.5rem;
+              color: #fff;
+              animation: slide 1s linear infinite;
+            }
+
+            img {
+              width: 40px;
+              height: 40px;
+            }
+          }
+        }
+
         .presentation{
             width: 100%;
             height: 100%;
@@ -34,7 +62,7 @@
             .pres-content {
                 position: absolute;
                 width: 30%;
-                height: 30%;                
+                height: 30%;
                 color: #fff;
                 top: 35%;
                 right: 12%;
@@ -52,7 +80,7 @@
                 p {
                     font-size: 12px;
                     line-height: 1.7;
-                    letter-spacing: 4px;
+                    letter-spacing: 3px;
                 }
 
                 strong {
@@ -60,7 +88,22 @@
                     font-weight: 600;
                 }
             }
-            
+
         }
     }
+}
+
+
+@keyframes slide {
+  0% {margin-bottom:30px;}
+  10% {margin-bottom:28px;} 
+  20% {margin-bottom:26px;}
+  30% {margin-bottom:24px;}
+  40% {margin-bottom:22px;}
+  50% {margin-bottom:20px;}
+  60% {margin-bottom:22px;}
+  70% {margin-bottom:24px;}
+  80% {margin-bottom:26px;}
+  90% {margin-bottom:28px;}
+  100% {margin-bottom:30px;}
 }

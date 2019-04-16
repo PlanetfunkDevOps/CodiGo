@@ -100,6 +100,28 @@ header {
       padding: 5px;
       border-radius: .5rem; }
 
+.outer-header {
+  position: absolute;
+  z-index: 10;
+  width: 250px;
+  top: 90px;
+  left: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+  .outer-header .menu {
+    width: 50%; }
+    .outer-header .menu .burger-menu__list .burger-menu__item {
+      margin: 1rem; }
+      .outer-header .menu .burger-menu__list .burger-menu__item .burger-menu__link {
+        color: #fff; }
+  .outer-header .social {
+    width: 50%; }
+    .outer-header .social .social-menu__list .social-menu__item {
+      margin: 1rem; }
+      .outer-header .social .social-menu__list .social-menu__item .social-menu__link {
+        color: #fff; }
+
 .banner .inner-banner {
   position: relative;
   width: 100vw;
@@ -120,6 +142,25 @@ header {
       top: 0;
       left: 0;
       object-fit: cover; }
+  .banner .inner-banner .banner-scroll {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    color: #fff; }
+    .banner .inner-banner .banner-scroll .scroll-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .banner .inner-banner .banner-scroll .scroll-container p {
+        margin-bottom: 20px; }
+      .banner .inner-banner .banner-scroll .scroll-container a {
+        font-size: 1.5rem;
+        color: #fff;
+        animation: slide 1s linear infinite; }
+      .banner .inner-banner .banner-scroll .scroll-container img {
+        width: 40px;
+        height: 40px; }
   .banner .inner-banner .presentation {
     width: 100%;
     height: 100%;
@@ -140,10 +181,34 @@ header {
       .banner .inner-banner .presentation .pres-content p {
         font-size: 12px;
         line-height: 1.7;
-        letter-spacing: 4px; }
+        letter-spacing: 3px; }
       .banner .inner-banner .presentation .pres-content strong {
         font-size: 1rem;
         font-weight: 600; }
+
+@keyframes slide {
+  0% {
+    margin-bottom: 30px; }
+  10% {
+    margin-bottom: 28px; }
+  20% {
+    margin-bottom: 26px; }
+  30% {
+    margin-bottom: 24px; }
+  40% {
+    margin-bottom: 22px; }
+  50% {
+    margin-bottom: 20px; }
+  60% {
+    margin-bottom: 22px; }
+  70% {
+    margin-bottom: 24px; }
+  80% {
+    margin-bottom: 26px; }
+  90% {
+    margin-bottom: 28px; }
+  100% {
+    margin-bottom: 30px; } }
 
 .about {
   margin: 10rem 10%; }

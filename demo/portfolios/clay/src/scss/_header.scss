@@ -45,3 +45,37 @@ header {
     }
 }
 
+.outer-header {
+    position: absolute;
+    z-index: 10;
+    width: 250px;
+    top: 90px;
+    left: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    .menu {
+        width: 50%;
+        .burger-menu__list {
+            .burger-menu__item {
+                margin: 1rem;
+                .burger-menu__link {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .social {
+        width: 50%;
+        .social-menu__list {
+            .social-menu__item {
+                margin: 1rem;
+                .social-menu__link {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
