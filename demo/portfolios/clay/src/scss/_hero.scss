@@ -1,109 +1,104 @@
 .banner {
-    .inner-banner {
-        position: relative;
-        width: 100vw;
+  .inner-banner {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 50px;
+
+    .banner-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #000;
+      width: 100%;
+      height: 100vh;
+
+      .img-content {
+        width: 100%;
         height: 100vh;
-        margin-bottom: 50px;
+        overflow: hidden;
+        opacity: 0.4;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+      }
+    }
 
-        .banner-img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #000;
-            width: 100%;
-            height: 100vh;
+    .banner-scroll {
+      width: 100%;
+      position: absolute;
+      bottom: 20px;
+      color: #fff;
 
+      .scroll-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-            .img-content {
-                width: 100%;
-                height: 100vh;
-                overflow: hidden;
-                opacity: .4;
-                top: 0;
-                left: 0;
-                object-fit: cover;
-            }
+        p {
+          margin-bottom: 30px;
         }
 
-        .banner-scroll {
-          width: 100%;
-          position: absolute;
-          bottom: 20px;
+        a {
+          font-size: 1.5rem;
           color: #fff;
+          animation: slide 1s linear infinite;
+        }
 
-          .scroll-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
 
-            p {
-              margin-bottom: 20px;
-            }
+    .presentation {
+      width: 100%;
+      height: 100%;
+      position: relative;
 
-            a {
-              font-size: 1.5rem;
-              color: #fff;
-              animation: slide 1s linear infinite;
-            }
+      .pres-content {
+        position: absolute;
+        width: 30%;
+        height: 30%;
+        color: #fff;
+        top: 35%;
+        right: 12%;
 
-            img {
-              width: 40px;
-              height: 40px;
-            }
+        h2 {
+          font-size: 3.5rem;
+          margin-bottom: 3rem;
+          line-height: 1.4;
+
+          span {
+            color: aqua;
           }
         }
 
-        .presentation{
-            width: 100%;
-            height: 100%;
-            position: relative;
-
-            .pres-content {
-                position: absolute;
-                width: 30%;
-                height: 30%;
-                color: #fff;
-                top: 35%;
-                right: 12%;
-
-                h2 {
-                    font-size: 3.5rem;
-                    margin-bottom: 3rem;
-                    line-height: 1.4;
-
-                    span {
-                        color: aqua;
-                    }
-                }
-
-                p {
-                    font-size: 12px;
-                    line-height: 1.7;
-                    letter-spacing: 3px;
-                }
-
-                strong {
-                    font-size: 1rem;
-                    font-weight: 600;
-                }
-            }
-
+        p {
+          font-size: 12px;
+          line-height: 1.7;
+          letter-spacing: 3px;
         }
+
+        strong {
+          font-size: 1rem;
+          font-weight: 600;
+        }
+      }
     }
+  }
 }
 
-
 @keyframes slide {
-  0% {margin-bottom:30px;}
-  10% {margin-bottom:28px;} 
-  20% {margin-bottom:26px;}
-  30% {margin-bottom:24px;}
-  40% {margin-bottom:22px;}
-  50% {margin-bottom:20px;}
-  60% {margin-bottom:22px;}
-  70% {margin-bottom:24px;}
-  80% {margin-bottom:26px;}
-  90% {margin-bottom:28px;}
-  100% {margin-bottom:30px;}
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
